@@ -16,6 +16,7 @@ typedef struct ts_hashmap_t {
    int numOps;
    int capacity;
    int size;
+   pthread_mutex_t lock;
 } ts_hashmap_t;
 
 // function declarations
